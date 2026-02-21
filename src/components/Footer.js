@@ -8,45 +8,72 @@ function Footer() {
   let date = new Date();
   let year = date.getFullYear();
 
+  const textStyle = { color: "white", margin: 0 };
+  const iconStyle = { color: "white", fontSize: "22px" };
+
   return (
-    <Container fluid className="footer">
-      <Row>
-        <Col md="4" className="footer-copywright">
-          <h3>Copyright © {year} Pavan T Y</h3>
+    <Container
+      fluid
+      className="footer"
+      style={{
+        backgroundColor: "#0d1117",
+        padding: "20px 0",
+        color: "white",
+        overflowX: "hidden",     // ✅ prevents horizontal scrollbar
+        maxWidth: "100%",        // ✅ ensures no extra width
+      }}
+    >
+      <Row
+        className="align-items-center text-center"
+        style={{ margin: 0 }}    // ✅ removes row negative margin issues
+      >
+        {/* Left */}
+        <Col md="4" style={{ paddingLeft: 0, paddingRight: 0 }}>
+          <h6 style={textStyle}>By Pavan T Y</h6>
         </Col>
 
-        <Col md="4" className="footer-body">
-          <ul className="footer-icons">
-            {/* GitHub */}
-            <li className="social-icons">
+        {/* Middle */}
+        <Col md="4" style={{ paddingLeft: 0, paddingRight: 0 }}>
+          <h6 style={textStyle}>Copyright © {year}</h6>
+        </Col>
+
+        {/* Right */}
+        <Col md="4" style={{ paddingLeft: 0, paddingRight: 0 }}>
+          <ul
+            style={{
+              listStyle: "none",
+              display: "flex",
+              justifyContent: "center",
+              gap: "15px",
+              padding: 0,
+              margin: 0,
+              maxWidth: "100%",
+            }}
+          >
+            <li>
               <a
                 href="https://github.com/pavanty"
-                style={{ color: "white" }}
                 target="_blank"
                 rel="noopener noreferrer"
+                style={iconStyle}
               >
                 <AiFillGithub />
               </a>
             </li>
 
-            {/* LinkedIn */}
-            <li className="social-icons">
+            <li>
               <a
                 href="https://www.linkedin.com/in/pavan-ty-888a3b169/"
-                style={{ color: "white" }}
                 target="_blank"
                 rel="noopener noreferrer"
+                style={iconStyle}
               >
                 <FaLinkedinIn />
               </a>
             </li>
 
-            {/* Email */}
-            <li className="social-icons">
-              <a
-                href="mailto:pavantyn@gmail.com"
-                style={{ color: "white" }}
-              >
+            <li>
+              <a href="mailto:pavantyn@gmail.com" style={iconStyle}>
                 <MdEmail />
               </a>
             </li>
