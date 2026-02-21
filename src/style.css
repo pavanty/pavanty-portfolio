@@ -760,10 +760,18 @@ button:focus {
   display: none !important;
 }
 
-.project-card-desc ul {
-  margin: 0 !important;
-  padding-left: 1.1rem !important;
+/* Add to App.css or style.css */
+
+/* Normalize UL spacing inside the project description */
+.project-card-view ul {
+  margin: 0;
+  padding-left: 18px;
 }
-.project-card-desc li {
-  margin-bottom: 8px;
+
+.project-card-view li {
+  margin-bottom: 6px;
+}
+
+.project-card-view li:last-child {
+  margin-bottom: 0;
 }

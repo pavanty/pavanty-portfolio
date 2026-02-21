@@ -1,41 +1,37 @@
 import React from "react";
-import Card from "react-bootstrap/Card";
-import Button from "react-bootstrap/Button";
-import { CgWebsite } from "react-icons/cg";
-import { BsGithub } from "react-icons/bs";
+import { Card, Button } from "react-bootstrap";
 
-function ProjectCards(props) {
+function ProjectCard({ imgPath, title, description, ghLink, demoLink }) {
   return (
     <Card
-      className="w-100 shadow-lg"
+      className="project-card w-100 h-100 shadow-lg"
       style={{
         backgroundColor: "#16213e",
         color: "white",
         borderRadius: "20px",
         border: "1px solid rgba(255,255,255,0.12)",
+        overflow: "hidden",
         display: "flex",
         flexDirection: "column",
-        overflow: "hidden",
-        height: "100%",
       }}
     >
       <Card.Img
         variant="top"
-        src={props.imgPath}
-        alt="project-img"
+        src={imgPath}
+        alt="project"
+        className="project-card-img"
         style={{
-          height: "320px",
+          height: "220px",
           objectFit: "contain",
           backgroundColor: "#16213e",
-          borderTopLeftRadius: "20px",
-          borderTopRightRadius: "20px",
         }}
       />
 
       <Card.Body
+        className="project-card-body"
         style={{
           display: "grid",
-          gridTemplateRows: "auto 1fr auto", // ✅ FIX: title grows on mobile
+          gridTemplateRows: "56px 1fr auto",
           gap: "12px",
           padding: "18px 20px 20px",
           minHeight: 0,
@@ -43,62 +39,52 @@ function ProjectCards(props) {
       >
         <Card.Title
           style={{
-            fontSize: "1.15rem",
+            fontSize: "1.05rem",
             fontWeight: 600,
             margin: 0,
             lineHeight: 1.25,
-            textAlign: "center",
-            wordBreak: "break-word", // ✅ prevents overflow for long words
+            overflow: "hidden",
+            display: "-webkit-box",
+            WebkitBoxOrient: "vertical",
+            WebkitLineClamp: 2,
           }}
         >
-          {props.title}
+          {title}
         </Card.Title>
 
-        <div
-          style={{
-            overflow: "hidden",
-            fontSize: "0.95rem",
-            lineHeight: 1.55,
-          }}
-        >
-          <div style={{ margin: 0 }}>{props.description}</div>
+        <div className="project-card-desc" style={{ minHeight: 0, overflow: "hidden" }}>
+          {/* IMPORTANT: your description is a <ul>. Keep it from breaking layout */}
+          <div
+            style={{
+              fontSize: "0.95rem",
+              lineHeight: 1.6,
+              overflow: "hidden",
+              display: "-webkit-box",
+              WebkitBoxOrient: "vertical",
+              WebkitLineClamp: 6, // adjust if you want more/less
+            }}
+          >
+            {description}
+          </div>
         </div>
 
-        <div
-          style={{
-            display: "flex",
-            gap: "10px",
-            alignItems: "center",
-            flexWrap: "wrap", // ✅ FIX: buttons wrap on mobile
-          }}
-        >
-          {props.ghLink && (
-            <Button
-              variant="primary"
-              href={props.ghLink}
-              target="_blank"
-              rel="noreferrer"
-              size="sm"
-            >
-              <BsGithub /> GitHub
-            </Button>
-          )}
-
-          {props.demoLink && (
-            <Button
-              variant="outline-light"
-              href={props.demoLink}
-              target="_blank"
-              rel="noreferrer"
-              size="sm"
-            >
-              <CgWebsite /> View
-            </Button>
-          )}
-        </div>
+        {(ghLink || demoLink) && (
+          <div className="d-flex gap-2 flex-wrap">
+            {ghLink && (
+              <Button variant="outline-light" size="sm" href={ghLink} target="_blank" rel="noreferrer">
+                GitHub
+              </Button>
+            )}
+            {demoLink && (
+              <Button variant="outline-light" size="sm" href={demoLink} target="_blank" rel="noreferrer">
+                Demo
+              </Button>
+            )}
+          </div>
+        )}
       </Card.Body>
     </Card>
   );
 }
 
-export default ProjectCards;
+export default ProjectCard;

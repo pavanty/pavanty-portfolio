@@ -1,3 +1,4 @@
+// src/components/Projects/Projects.js
 import React, { useEffect, useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
@@ -28,7 +29,6 @@ function Projects() {
 
   return (
     <Container fluid className="project-section">
-      {/* ✅ Avoid tsparticles resize crash in mobile/devtools mode */}
       {!isMobile && <Particle />}
 
       <Container>
@@ -40,8 +40,8 @@ function Projects() {
           Business, analytics, and product-focused projects demonstrating measurable impact and structured problem-solving.
         </p>
 
-        <Row className="g-3 justify-content-center">
-          <Col xs={12} md={4} className="d-flex">
+        <Row className="g-4 justify-content-center">
+          <Col xs={12} md={6} lg={4} className="d-flex">
             <ProjectCard
               imgPath={doseguide}
               title="DoseGuide - Product Strategy & PRD (Team Lead)"
@@ -57,7 +57,7 @@ function Projects() {
             />
           </Col>
 
-          <Col xs={12} md={4} className="d-flex">
+          <Col xs={12} md={6} lg={4} className="d-flex">
             <ProjectCard
               imgPath={suicide}
               title="Public Health Suicide Trends Dashboard (Power BI)"
@@ -73,7 +73,7 @@ function Projects() {
             />
           </Col>
 
-          <Col xs={12} md={4} className="d-flex">
+          <Col xs={12} md={6} lg={4} className="d-flex">
             <ProjectCard
               imgPath={perq}
               title="Perq with Zelle - Financial Platform Integration"
@@ -89,7 +89,7 @@ function Projects() {
             />
           </Col>
 
-          <Col xs={12} md={4} className="d-flex">
+          <Col xs={12} md={6} lg={4} className="d-flex">
             <ProjectCard
               imgPath={toyota}
               title="Toyota Supply Chain Resilience During COVID-19"
@@ -104,7 +104,7 @@ function Projects() {
             />
           </Col>
 
-          <Col xs={12} md={4} className="d-flex">
+          <Col xs={12} md={6} lg={4} className="d-flex">
             <ProjectCard
               imgPath={supplychain}
               title="Supply Chain Optimization Initiative (Team Lead)"
