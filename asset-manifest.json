@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/pavanty-portfolio/static/css/main.5305dc3e.css",
-    "main.js": "/pavanty-portfolio/static/js/main.24558c05.js",
+    "main.js": "/pavanty-portfolio/static/js/main.359ac574.js",
     "static/js/453.1407b060.chunk.js": "/pavanty-portfolio/static/js/453.1407b060.chunk.js",
     "static/media/Supply chain.png": "/pavanty-portfolio/static/media/Supply chain.cf154a1bc0fc87ac95c7.png",
     "static/media/Toyota Presentation.png": "/pavanty-portfolio/static/media/Toyota Presentation.2b6170cd5142a83cc32c.png",
     "static/media/sql.jpg": "/pavanty-portfolio/static/media/sql.e02bf648c947b15758f4.jpg",
     "static/media/coursera.jpg": "/pavanty-portfolio/static/media/coursera.18f022a42d2179acc117.jpg",
-    "static/media/Perq's with Zelle.png": "/pavanty-portfolio/static/media/Perq's with Zelle.ff1f9bb1d941c318f0af.png",
     "static/media/cspo.jpg": "/pavanty-portfolio/static/media/cspo.fec64177841f3946e113.jpg",
     "static/media/Data Landscape of GenAI for Project Managers_page-0001.jpg": "/pavanty-portfolio/static/media/Data Landscape of GenAI for Project Managers_page-0001.0c38f1b39d6f8ab8b9c9.jpg",
+    "static/media/Perq's with Zelle.jpg": "/pavanty-portfolio/static/media/Perq's with Zelle.3dbdbca88ab89ebb18c5.jpg",
     "static/media/Capgemini_Ocean Level-2.jpg": "/pavanty-portfolio/static/media/Capgemini_Ocean Level-2.9d012f4e35ebe2abd283.jpg",
     "static/media/home-main.svg": "/pavanty-portfolio/static/media/home-main.359935c39288e92d4dba5c9f2445b91d.svg",
     "static/media/suicide trends.png": "/pavanty-portfolio/static/media/suicide trends.882a5475470cba2240e7.png",
@@ -34,11 +34,11 @@
     "static/media/Minitab.svg": "/pavanty-portfolio/static/media/Minitab.310b952bfdc9d15ad450df35eedbdeb0.svg",
     "index.html": "/pavanty-portfolio/index.html",
     "main.5305dc3e.css.map": "/pavanty-portfolio/static/css/main.5305dc3e.css.map",
-    "main.24558c05.js.map": "/pavanty-portfolio/static/js/main.24558c05.js.map",
+    "main.359ac574.js.map": "/pavanty-portfolio/static/js/main.359ac574.js.map",
     "453.1407b060.chunk.js.map": "/pavanty-portfolio/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5305dc3e.css",
-    "static/js/main.24558c05.js"
+    "static/js/main.359ac574.js"
   ]
 }
