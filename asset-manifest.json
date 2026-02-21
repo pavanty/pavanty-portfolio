@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/pavanty-portfolio/static/css/main.d5315155.css",
+    "main.css": "/pavanty-portfolio/static/css/main.7344e834.css",
     "main.js": "/pavanty-portfolio/static/js/main.ca199cea.js",
     "static/js/453.1407b060.chunk.js": "/pavanty-portfolio/static/js/453.1407b060.chunk.js",
     "static/media/Supply chain.png": "/pavanty-portfolio/static/media/Supply chain.cf154a1bc0fc87ac95c7.png",
@@ -33,12 +33,12 @@
     "index.html": "/pavanty-portfolio/index.html",
     "static/media/Git.svg": "/pavanty-portfolio/static/media/Git.9da88573cca3c97a3a1523ae09d93654.svg",
     "static/media/Minitab.svg": "/pavanty-portfolio/static/media/Minitab.310b952bfdc9d15ad450df35eedbdeb0.svg",
-    "main.d5315155.css.map": "/pavanty-portfolio/static/css/main.d5315155.css.map",
+    "main.7344e834.css.map": "/pavanty-portfolio/static/css/main.7344e834.css.map",
     "main.ca199cea.js.map": "/pavanty-portfolio/static/js/main.ca199cea.js.map",
     "453.1407b060.chunk.js.map": "/pavanty-portfolio/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d5315155.css",
+    "static/css/main.7344e834.css",
     "static/js/main.ca199cea.js"
   ]
 }
