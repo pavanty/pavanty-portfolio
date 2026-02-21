@@ -13,10 +13,7 @@ function Toolstack() {
       
    
 
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={chrome} alt="Chrome" className="tech-icon-images" />
-        <div className="tech-icons-text">Google Chrome</div>
-      </Col>
+    
 
       <Col xs={4} md={2} className="tech-icons">
         <img src={vsCode} alt="VSCode" className="tech-icon-images" />
