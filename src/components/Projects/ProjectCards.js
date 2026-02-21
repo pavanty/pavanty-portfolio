@@ -19,44 +19,41 @@ function ProjectCards(props) {
         height: "100%",
       }}
     >
-<Card.Img
-  variant="top"
-  src={props.imgPath}
-  alt="project-img"
-  style={{
-    height: "320px",          // <- same as Certifications
-    objectFit: "contain",     // <- same behavior (no crop)
-    backgroundColor: "#16213e",
-    borderTopLeftRadius: "20px",   // match card radius
-    borderTopRightRadius: "20px",  // match card radius
-  }}
-/>
-   
+      <Card.Img
+        variant="top"
+        src={props.imgPath}
+        alt="project-img"
+        style={{
+          height: "320px",
+          objectFit: "contain",
+          backgroundColor: "#16213e",
+          borderTopLeftRadius: "20px",
+          borderTopRightRadius: "20px",
+        }}
+      />
 
-      {/* BODY: grid keeps title/desc/buttons aligned */}
       <Card.Body
         style={{
           display: "grid",
-          gridTemplateRows: "56px 1fr 44px", // title / description / buttons
+          gridTemplateRows: "auto 1fr auto", // ✅ FIX: title grows on mobile
           gap: "12px",
           padding: "18px 20px 20px",
           minHeight: 0,
-          
         }}
       >
-<Card.Title
-  style={{
-    fontSize: "1.15rem",
-    fontWeight: 600,
-    margin: 0,
-    lineHeight: 1.25,
-    textAlign: "center",   // ADD THIS
-  }}
->
-  {props.title}
-</Card.Title>
+        <Card.Title
+          style={{
+            fontSize: "1.15rem",
+            fontWeight: 600,
+            margin: 0,
+            lineHeight: 1.25,
+            textAlign: "center",
+            wordBreak: "break-word", // ✅ prevents overflow for long words
+          }}
+        >
+          {props.title}
+        </Card.Title>
 
-        {/* Description (supports UL or text) */}
         <div
           style={{
             overflow: "hidden",
@@ -64,22 +61,15 @@ function ProjectCards(props) {
             lineHeight: 1.55,
           }}
         >
-          {/* Make UL spacing consistent if description is a <ul> */}
-          <div
-            style={{
-              margin: 0,
-            }}
-          >
-            {props.description}
-          </div>
+          <div style={{ margin: 0 }}>{props.description}</div>
         </div>
 
-        {/* Buttons */}
         <div
           style={{
             display: "flex",
             gap: "10px",
             alignItems: "center",
+            flexWrap: "wrap", // ✅ FIX: buttons wrap on mobile
           }}
         >
           {props.ghLink && (
