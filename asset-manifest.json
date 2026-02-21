@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/pavanty-portfolio/static/css/main.7344e834.css",
-    "main.js": "/pavanty-portfolio/static/js/main.ca199cea.js",
+    "main.js": "/pavanty-portfolio/static/js/main.0938d253.js",
     "static/js/453.1407b060.chunk.js": "/pavanty-portfolio/static/js/453.1407b060.chunk.js",
     "static/media/Supply chain.png": "/pavanty-portfolio/static/media/Supply chain.cf154a1bc0fc87ac95c7.png",
     "static/media/Toyota Presentation.png": "/pavanty-portfolio/static/media/Toyota Presentation.2b6170cd5142a83cc32c.png",
@@ -27,18 +27,18 @@
     "static/media/Python.svg": "/pavanty-portfolio/static/media/Python.4c10e3e883c66039a07b3d1da3551107.svg",
     "static/media/React.svg": "/pavanty-portfolio/static/media/React.dab5e742691999bfe3df57d8d690607b.svg",
     "static/media/pre.svg": "/pavanty-portfolio/static/media/pre.4410c5baaa673cc131da.svg",
+    "index.html": "/pavanty-portfolio/index.html",
     "static/media/Javascript.svg": "/pavanty-portfolio/static/media/Javascript.2d2e6d4fde8c0beaf89875c287164a7c.svg",
     "static/media/tableau.svg": "/pavanty-portfolio/static/media/tableau.61c8db57bf17bbc58bdcc6b039d76e5d.svg",
     "static/media/powerbi.svg": "/pavanty-portfolio/static/media/powerbi.77d15c152be6b62b0d11df437eeefff1.svg",
-    "index.html": "/pavanty-portfolio/index.html",
     "static/media/Git.svg": "/pavanty-portfolio/static/media/Git.9da88573cca3c97a3a1523ae09d93654.svg",
     "static/media/Minitab.svg": "/pavanty-portfolio/static/media/Minitab.310b952bfdc9d15ad450df35eedbdeb0.svg",
     "main.7344e834.css.map": "/pavanty-portfolio/static/css/main.7344e834.css.map",
-    "main.ca199cea.js.map": "/pavanty-portfolio/static/js/main.ca199cea.js.map",
+    "main.0938d253.js.map": "/pavanty-portfolio/static/js/main.0938d253.js.map",
     "453.1407b060.chunk.js.map": "/pavanty-portfolio/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7344e834.css",
-    "static/js/main.ca199cea.js"
+    "static/js/main.0938d253.js"
   ]
 }
