@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
@@ -7,12 +7,30 @@ import toyota from "../../Assets/Projects/Toyota Presentation.png";
 import suicide from "../../Assets/Projects/suicide trends.png";
 import supplychain from "../../Assets/Projects/Supply chain.png";
 import perq from "../../Assets/Projects/Perq's with Zelle.jpg";
-import doseguide from  "../../Assets/Projects/DoseGuide - Medication Tracking & Pharmacy Integration Platform .pdf.webp";
+import doseguide from "../../Assets/Projects/DoseGuide - Medication Tracking & Pharmacy Integration Platform .pdf.webp";
+
+function useIsMobile(breakpoint = 768) {
+  const [isMobile, setIsMobile] = useState(() =>
+    typeof window !== "undefined" ? window.innerWidth < breakpoint : false
+  );
+
+  useEffect(() => {
+    const onResize = () => setIsMobile(window.innerWidth < breakpoint);
+    window.addEventListener("resize", onResize);
+    return () => window.removeEventListener("resize", onResize);
+  }, [breakpoint]);
+
+  return isMobile;
+}
 
 function Projects() {
+  const isMobile = useIsMobile(768);
+
   return (
     <Container fluid className="project-section">
-      <Particle />
+      {/* ✅ Avoid tsparticles resize crash in mobile/devtools mode */}
+      {!isMobile && <Particle />}
+
       <Container>
         <h1 className="project-heading mb-2">
           My <strong className="purple">Key Projects</strong>
@@ -23,9 +41,7 @@ function Projects() {
         </p>
 
         <Row className="g-3 justify-content-center">
-
-          {/* DoseGuide */}
-          <Col md={4} className="d-flex">
+          <Col xs={12} md={4} className="d-flex">
             <ProjectCard
               imgPath={doseguide}
               title="DoseGuide - Product Strategy & PRD (Team Lead)"
@@ -41,8 +57,7 @@ function Projects() {
             />
           </Col>
 
-          {/* Public Health Dashboard */}
-          <Col md={4} className="d-flex">
+          <Col xs={12} md={4} className="d-flex">
             <ProjectCard
               imgPath={suicide}
               title="Public Health Suicide Trends Dashboard (Power BI)"
@@ -58,8 +73,7 @@ function Projects() {
             />
           </Col>
 
-          {/* Perq with Zelle */}
-          <Col md={4} className="d-flex">
+          <Col xs={12} md={4} className="d-flex">
             <ProjectCard
               imgPath={perq}
               title="Perq with Zelle - Financial Platform Integration"
@@ -75,8 +89,7 @@ function Projects() {
             />
           </Col>
 
-          {/* Toyota Supply Chain */}
-          <Col md={4} className="d-flex">
+          <Col xs={12} md={4} className="d-flex">
             <ProjectCard
               imgPath={toyota}
               title="Toyota Supply Chain Resilience During COVID-19"
@@ -91,8 +104,7 @@ function Projects() {
             />
           </Col>
 
-          {/* Supply Chain Optimization */}
-          <Col md={4} className="d-flex">
+          <Col xs={12} md={4} className="d-flex">
             <ProjectCard
               imgPath={supplychain}
               title="Supply Chain Optimization Initiative (Team Lead)"
@@ -106,7 +118,6 @@ function Projects() {
               }
             />
           </Col>
-
         </Row>
       </Container>
     </Container>

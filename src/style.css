@@ -760,3 +760,10 @@ button:focus {
   display: none !important;
 }
 
+.project-card-desc ul {
+  margin: 0 !important;
+  padding-left: 1.1rem !important;
+}
+.project-card-desc li {
+  margin-bottom: 8px;
+}
