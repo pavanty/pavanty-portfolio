@@ -5,7 +5,7 @@ import { ImPointRight } from "react-icons/im";
 function AboutCard() {
   return (
     <Card className="quote-card-view">
-      <Card.Body>
+      <Card.Body className="about-body">
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
             I hold a <span className="purple">Bachelor’s degree in Computer Science </span> 
