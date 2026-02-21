@@ -1,10 +1,11 @@
+// src/components/Projects/ProjectCards.js
 import React from "react";
 import { Card, Button } from "react-bootstrap";
 
 function ProjectCard({ imgPath, title, description, ghLink, demoLink }) {
   return (
     <Card
-      className="project-card w-100 h-100 shadow-lg"
+      className="project-card-view w-100 h-100 shadow-lg"
       style={{
         backgroundColor: "#16213e",
         color: "white",
@@ -19,7 +20,6 @@ function ProjectCard({ imgPath, title, description, ghLink, demoLink }) {
         variant="top"
         src={imgPath}
         alt="project"
-        className="project-card-img"
         style={{
           height: "220px",
           objectFit: "contain",
@@ -28,7 +28,6 @@ function ProjectCard({ imgPath, title, description, ghLink, demoLink }) {
       />
 
       <Card.Body
-        className="project-card-body"
         style={{
           display: "grid",
           gridTemplateRows: "56px 1fr auto",
@@ -52,8 +51,7 @@ function ProjectCard({ imgPath, title, description, ghLink, demoLink }) {
           {title}
         </Card.Title>
 
-        <div className="project-card-desc" style={{ minHeight: 0, overflow: "hidden" }}>
-          {/* IMPORTANT: your description is a <ul>. Keep it from breaking layout */}
+        <div style={{ minHeight: 0, overflow: "hidden" }}>
           <div
             style={{
               fontSize: "0.95rem",
@@ -61,7 +59,7 @@ function ProjectCard({ imgPath, title, description, ghLink, demoLink }) {
               overflow: "hidden",
               display: "-webkit-box",
               WebkitBoxOrient: "vertical",
-              WebkitLineClamp: 6, // adjust if you want more/less
+              // WebkitLineClamp: 6,
             }}
           >
             {description}
@@ -71,12 +69,25 @@ function ProjectCard({ imgPath, title, description, ghLink, demoLink }) {
         {(ghLink || demoLink) && (
           <div className="d-flex gap-2 flex-wrap">
             {ghLink && (
-              <Button variant="outline-light" size="sm" href={ghLink} target="_blank" rel="noreferrer">
+              <Button
+                size="sm"
+                variant="outline-light"
+                href={ghLink}
+                target="_blank"
+                rel="noreferrer"
+              >
                 GitHub
               </Button>
             )}
+
             {demoLink && (
-              <Button variant="outline-light" size="sm" href={demoLink} target="_blank" rel="noreferrer">
+              <Button
+                size="sm"
+                variant="outline-light"
+                href={demoLink}
+                target="_blank"
+                rel="noreferrer"
+              >
                 Demo
               </Button>
             )}
