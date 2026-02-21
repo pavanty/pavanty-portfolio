@@ -19,16 +19,16 @@ function ProjectCards(props) {
         height: "100%",
       }}
     >
-     <Card.Img
+<Card.Img
   variant="top"
   src={props.imgPath}
   alt="project-img"
   style={{
-    height: "220px",
-    objectFit: "cover",
+    height: "320px",          // <- same as Certifications
+    objectFit: "contain",     // <- same behavior (no crop)
     backgroundColor: "#16213e",
-    borderTopLeftRadius: "5px",
-    borderTopRightRadius: "5px",
+    borderTopLeftRadius: "20px",   // match card radius
+    borderTopRightRadius: "20px",  // match card radius
   }}
 />
    
@@ -41,15 +41,16 @@ function ProjectCards(props) {
           gap: "12px",
           padding: "18px 20px 20px",
           minHeight: 0,
+          
         }}
       >
-        {/* Title */}
-      <Card.Title
+<Card.Title
   style={{
     fontSize: "1.15rem",
     fontWeight: 600,
     margin: 0,
     lineHeight: 1.25,
+    textAlign: "center",   // ADD THIS
   }}
 >
   {props.title}
