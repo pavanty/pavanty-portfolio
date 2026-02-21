@@ -8,7 +8,7 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            I hold a <span className="purple">Bachelor’s degree in Computer Science</span> 
+            I hold a <span className="purple">Bachelor’s degree in Computer Science </span> 
             and am currently pursuing a{" "}
             <span className="purple">Master’s in Engineering Management at Northeastern University, Boston</span>.
             <br />
