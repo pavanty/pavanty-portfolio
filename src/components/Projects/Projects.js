@@ -7,7 +7,7 @@ import Particle from "../Particle";
 import toyota from "../../Assets/Projects/Toyota Presentation.png";
 import suicide from "../../Assets/Projects/suicide trends.png";
 import supplychain from "../../Assets/Projects/Supply chain.png";
-import perq from "../../Assets/Projects/Perq's with Zelle.png";
+import perq from "../../Assets/Projects/Perq's with Zelle.jpg";
 import doseguide from  "../../Assets/Projects/DoseGuide - Medication Tracking & Pharmacy Integration Platform .pdf.webp"
 
 function Projects() {
