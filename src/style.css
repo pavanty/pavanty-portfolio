@@ -760,17 +760,3 @@ button:focus {
   display: none !important;
 }
 
-.about-body {
-  font-size: 1.2em !important;
-  text-align: left;
-  line-height: 1.8;
-}
-
-.about-body p {
-  margin: 0;
-}
-
-.about-body ul {
-  margin-top: 10px;
-  padding-left: 1.2rem;
-}
