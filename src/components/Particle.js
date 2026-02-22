@@ -11,33 +11,36 @@ function Particle() {
     <Particles
       id="tsparticles"
       init={particlesInit}
+      style={{
+        position: "fixed",
+        inset: 0,
+        zIndex: 0,
+        pointerEvents: "none", // ✅ critical: particles never capture clicks
+      }}
       options={{
+        fullScreen: {
+          enable: true,
+          zIndex: 0, // ✅ keep it behind all content
+        },
         fpsLimit: 60,
+
         particles: {
           number: {
             value: 160,
             density: {
               enable: true,
-              value_area: 1500,
+              area: 1500, // ✅ use "area" (newer option name)
             },
           },
-          color: {
-            value: "#ffffff",
-          },
-          links: {
-            enable: false,
-          },
+          color: { value: "#ffffff" },
+          links: { enable: false },
           move: {
-            enable: true,        // ← was missing!
+            enable: true,
             direction: "right",
-            speed: 1,            // ← was 0.05, way too slow
-            outModes: {
-              default: "out",    // ← particles re-enter from the other side
-            },
+            speed: 1,
+            outModes: { default: "out" },
           },
-          size: {
-            value: { min: 1, max: 3 },
-          },
+          size: { value: { min: 1, max: 3 } },
           opacity: {
             value: 0.5,
             animation: {
@@ -47,19 +50,19 @@ function Particle() {
             },
           },
         },
+
+        // ✅ disable interactivity so nothing intercepts clicks
         interactivity: {
           events: {
-            onClick: {
-              enable: true,
-              mode: "push",
-            },
+            onClick: { enable: false },
+            onHover: { enable: false },
+            resize: true,
           },
           modes: {
-            push: {
-              quantity: 1,
-            },
+            push: { quantity: 1 },
           },
         },
+
         detectRetina: true,
       }}
     />
