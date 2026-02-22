@@ -12,7 +12,7 @@ I am a Business Analyst with a background in Computer Science and Engineering Ma
 - React-Bootstrap
 - CSS3
 - Node.js
-- Vercel (Deployment)
+
 
 ## Features
 
