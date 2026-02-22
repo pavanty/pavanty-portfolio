@@ -1,3 +1,4 @@
+// src/components/Certifications/Certifications.js
 import React from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import Particle from "../Particle";
@@ -31,6 +32,7 @@ function Certifications() {
       title: "Data Landscape of GenAI for Project Managers",
       issuer: "PMI",
       issued: "Mar 2025",
+      credentialId: "",
       image: genai,
       skills: ["Artificial Intelligence", "Risk Assessment", "Project Governance"],
     },
@@ -46,147 +48,168 @@ function Certifications() {
       title: "The Complete SQL Bootcamp",
       issuer: "Udemy",
       issued: "Jul 2020",
+      credentialId: "",
       image: sql,
       skills: ["PostgreSQL", "MySQL", "SQL Queries"],
     },
     {
       title: "Capgemini Entry Level Developer 1 & 2",
       issuer: "Capgemini",
+      issued: "",
+      credentialId: "",
       image: Capgemini,
       skills: ["Java", "Spring Boot", "React.js", "Git"],
     },
   ];
 
   return (
-    <Container fluid className="project-section">
-      <Particle />
-      <Container>
-        <h1 className="project-heading mb-3">
-          My <strong className="purple">Certifications</strong>
-        </h1>
+    <Container
+      fluid
+      className="project-section"
+      style={{ position: "relative" }}
+    >
+      {/* Background particles: fixed + non-interactive so it never blocks clicks */}
+      <div
+        style={{
+          position: "fixed",
+          inset: 0,
+          zIndex: 0,
+          pointerEvents: "none",
+        }}
+      >
+        <Particle />
+      </div>
 
-        <p style={{ color: "white", marginBottom: "50px", fontSize: "1.15rem" }}>
-          Professional certifications validating expertise in analytics, product management, and technology.
-        </p>
+      {/* Content above particles */}
+      <div style={{ position: "relative", zIndex: 1 }}>
+        <Container>
+          <h1 className="project-heading mb-3">
+            My <strong className="purple">Certifications</strong>
+          </h1>
 
-        <Row className="g-4">
-          {certifications.map((cert, index) => (
-            <Col xs={12} md={6} lg={4} className="d-flex" key={index}>
-              <Card
-                className="w-100 shadow-lg"
-                style={{
-                  backgroundColor: "#16213e",
-                  color: "white",
-                  borderRadius: "20px",
-                  border: "1px solid rgba(255,255,255,0.12)",
-                  display: "flex",
-                  flexDirection: "column",
-                  overflow: "hidden",
-                  height: "100%",
-                }}
-              >
-                {/* Certificate Image */}
-                <Card.Img
-                  variant="top"
-                  src={cert.image}
-                  alt="cert-logo"
+          <p style={{ color: "white", marginBottom: "50px", fontSize: "1.15rem" }}>
+            Professional certifications validating expertise in analytics, product
+            management, and technology.
+          </p>
+
+          <Row className="g-4">
+            {certifications.map((cert, index) => (
+              <Col xs={12} md={6} lg={4} className="d-flex" key={index}>
+                <Card
+                  className="w-100 shadow-lg"
                   style={{
-                    height: "320px",
-                    objectFit: "contain",
                     backgroundColor: "#16213e",
-                  }}
-                />
-
-                {/* Body Grid Layout */}
-                <Card.Body
-                  style={{
-                    display: "grid",
-                    gridTemplateRows: "64px 96px 1fr",
-                    gap: "12px",
-                    padding: "18px 20px 20px",
-                    minHeight: 0,
+                    color: "white",
+                    borderRadius: "20px",
+                    border: "1px solid rgba(255,255,255,0.12)",
+                    display: "flex",
+                    flexDirection: "column",
+                    overflow: "hidden",
+                    height: "100%",
                   }}
                 >
-                  {/* Title */}
-                  <Card.Title
+                  <Card.Img
+                    variant="top"
+                    src={cert.image}
+                    alt="cert-logo"
                     style={{
-                      fontSize: "1.15rem",
-                      fontWeight: 600,
-                      margin: 0,
-                      lineHeight: 1.25,
-                      overflow: "hidden",
-                      display: "-webkit-box",
-                      WebkitBoxOrient: "vertical",
-                      WebkitLineClamp: 2,
+                      height: "320px",
+                      objectFit: "contain",
+                      backgroundColor: "#16213e",
                     }}
-                  >
-                    {cert.title}
-                  </Card.Title>
+                  />
 
-                  {/* Details */}
-                  <div
+                  <Card.Body
                     style={{
-                      fontSize: "0.95rem",
-                      lineHeight: 1.45,
                       display: "grid",
-                      gridTemplateRows: "repeat(3, 1fr)",
+                      gridTemplateRows: "64px 96px 1fr",
+                      gap: "12px",
+                      padding: "18px 20px 20px",
+                      minHeight: 0,
                     }}
                   >
-                    <div>
-                      <span className="purple">Issuer:</span> {cert.issuer}
-                    </div>
-
-                    {cert.issued ? (
-                      <div>
-                        <span className="purple">Issued:</span> {cert.issued}
-                      </div>
-                    ) : (
-                      <div style={{ visibility: "hidden" }}>Issued:</div>
-                    )}
-
-                    {cert.credentialId ? (
-                      <div
-                        style={{
-                          overflow: "hidden",
-                          textOverflow: "ellipsis",
-                          whiteSpace: "nowrap",
-                        }}
-                        title={cert.credentialId}
-                      >
-                        <span className="purple">Credential ID:</span> {cert.credentialId}
-                      </div>
-                    ) : (
-                      <div style={{ visibility: "hidden" }}>Credential ID:</div>
-                    )}
-                  </div>
-
-                  {/* Skills */}
-                  <div style={{ overflow: "hidden" }}>
-                    <div className="purple fw-semibold mb-2" style={{ fontSize: "1rem" }}>
-                      Skills
-                    </div>
-
-                    <ul
+                    <Card.Title
                       style={{
-                        fontSize: "0.9rem",
-                        lineHeight: 1.6,
-                        paddingLeft: "20px",
+                        fontSize: "1.15rem",
+                        fontWeight: 600,
                         margin: 0,
-                        maxHeight: "110px",
+                        lineHeight: 1.25,
                         overflow: "hidden",
+                        display: "-webkit-box",
+                        WebkitBoxOrient: "vertical",
+                        WebkitLineClamp: 2,
                       }}
                     >
-                      {cert.skills.map((skill, i) => (
-                        <li key={i}>{skill}</li>
-                      ))}
-                    </ul>
-                  </div>
-                </Card.Body>
-              </Card>
-            </Col>
-          ))}
-        </Row>
-      </Container>
+                      {cert.title}
+                    </Card.Title>
+
+                    <div
+                      style={{
+                        fontSize: "0.95rem",
+                        lineHeight: 1.45,
+                        display: "grid",
+                        gridTemplateRows: "repeat(3, 1fr)",
+                      }}
+                    >
+                      <div>
+                        <span className="purple">Issuer:</span> {cert.issuer}
+                      </div>
+
+                      {cert.issued ? (
+                        <div>
+                          <span className="purple">Issued:</span> {cert.issued}
+                        </div>
+                      ) : (
+                        <div style={{ visibility: "hidden" }}>Issued:</div>
+                      )}
+
+                      {cert.credentialId ? (
+                        <div
+                          style={{
+                            overflow: "hidden",
+                            textOverflow: "ellipsis",
+                            whiteSpace: "nowrap",
+                          }}
+                          title={cert.credentialId}
+                        >
+                          <span className="purple">Credential ID:</span>{" "}
+                          {cert.credentialId}
+                        </div>
+                      ) : (
+                        <div style={{ visibility: "hidden" }}>Credential ID:</div>
+                      )}
+                    </div>
+
+                    <div style={{ overflow: "hidden" }}>
+                      <div
+                        className="purple fw-semibold mb-2"
+                        style={{ fontSize: "1rem" }}
+                      >
+                        Skills
+                      </div>
+
+                      <ul
+                        style={{
+                          fontSize: "0.9rem",
+                          lineHeight: 1.6,
+                          paddingLeft: "20px",
+                          margin: 0,
+                          maxHeight: "110px",
+                          overflow: "hidden",
+                        }}
+                      >
+                        {cert.skills.map((skill, i) => (
+                          <li key={i}>{skill}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  </Card.Body>
+                </Card>
+              </Col>
+            ))}
+          </Row>
+        </Container>
+      </div>
     </Container>
   );
 }

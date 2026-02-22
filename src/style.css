@@ -775,3 +775,7 @@ button:focus {
 .project-card-view li:last-child {
   margin-bottom: 0;
 }
+#tsparticles,
+.tsparticles-canvas-el {
+  pointer-events: none !important;
+}

@@ -6,7 +6,7 @@ function AboutCard() {
   return (
     <Card className="quote-card-view">
       <Card.Body className="home-about-body">
-
+ <blockquote className="blockquote mb-0">
         <p style={{ textAlign: "left" }}>
           I hold a <span className="purple">Bachelor’s degree in Computer Science</span>{" "}
           and am currently pursuing a{" "}
@@ -61,7 +61,13 @@ function AboutCard() {
         <p style={{ color: "rgb(155 126 172)", marginTop: "15px" }}>
           "Driven by data. Focused on impact."
         </p>
-
+      <footer
+  className="blockquote-footer"
+  style={{ textAlign: "center" }}
+>
+  Pavan T Y
+</footer>
+</blockquote>
       </Card.Body>
     </Card>
   );
