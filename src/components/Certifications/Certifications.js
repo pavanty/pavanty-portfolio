@@ -57,7 +57,7 @@ function Certifications() {
       title: "The Complete SQL Bootcamp",
       issuer: "Udemy",
       issued: "Jul 2020",
-      credentialId: "",
+      credentialId: "UC-5d85852a-d252-49d3-9309-644087018628",
       image: sql,
       skills: ["PostgreSQL", "MySQL", "SQL Queries"],
     },
