@@ -9,6 +9,8 @@ import genai from "../../Assets/certifications/Data Landscape of GenAI for Proje
 import sql from "../../Assets/certifications/sql.jpg";
 import pl300 from "../../Assets/certifications/PL300.png";
 import coursera from "../../Assets/certifications/coursera.jpg";
+import business from "../../Assets/certifications/business_analysis.jpg";
+
 
 function Certifications() {
   const certifications = [
@@ -19,6 +21,14 @@ function Certifications() {
       credentialId: "8A87839ADB909FE4",
       image: pl300,
       skills: ["Power BI", "DAX", "Data Visualization", "Business Intelligence"],
+    },
+     {
+      title: "Business Analysis A to Z Masterclass",
+      issuer: "Udemy",
+      issued: "Feb 2025",
+      credentialId: " UC-d9fd3c2d-2e90-46e8-884e-ce5277a097ed",
+      image: business,
+      skills: ["Requirement Gathering", "Wireframes", "BRD/FRD", "Use Cases"],
     },
     {
       title: "Certified Scrum Product Owner (CSPO)®",
