@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/pavanty-portfolio/static/css/main.3c175316.css",
-    "main.js": "/pavanty-portfolio/static/js/main.bc700d8b.js",
+    "main.js": "/pavanty-portfolio/static/js/main.cd3973ba.js",
     "static/js/453.1407b060.chunk.js": "/pavanty-portfolio/static/js/453.1407b060.chunk.js",
     "static/media/Supply chain.png": "/pavanty-portfolio/static/media/Supply chain.cf154a1bc0fc87ac95c7.png",
     "static/media/Toyota Presentation.png": "/pavanty-portfolio/static/media/Toyota Presentation.2b6170cd5142a83cc32c.png",
@@ -34,11 +34,11 @@
     "static/media/Git.svg": "/pavanty-portfolio/static/media/Git.9da88573cca3c97a3a1523ae09d93654.svg",
     "static/media/Minitab.svg": "/pavanty-portfolio/static/media/Minitab.310b952bfdc9d15ad450df35eedbdeb0.svg",
     "main.3c175316.css.map": "/pavanty-portfolio/static/css/main.3c175316.css.map",
-    "main.bc700d8b.js.map": "/pavanty-portfolio/static/js/main.bc700d8b.js.map",
+    "main.cd3973ba.js.map": "/pavanty-portfolio/static/js/main.cd3973ba.js.map",
     "453.1407b060.chunk.js.map": "/pavanty-portfolio/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3c175316.css",
-    "static/js/main.bc700d8b.js"
+    "static/js/main.cd3973ba.js"
   ]
 }
