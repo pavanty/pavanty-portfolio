@@ -110,10 +110,12 @@ function Projects() {
               title="Supply Chain Optimization Initiative (Team Lead)"
               description={
                 <ul>
-                  <li>Analyzed shipping lead times using paired and one-sample T-tests, identifying a 3-day logistics delay.</li>
-                  <li>Detected a 2-day second-class shipment gap impacting SLA performance.</li>
-                  <li>Conducted ANOVA analysis across four departments to assess demand variance.</li>
-                  <li>Visualized performance using Minitab and Power BI dashboards to support data-driven decisions.</li>
+             
+  <li>Analyzed shipping lead times using paired and one-sample T-tests as part of hypothesis testing, identifying a 3-day logistics delay.</li>
+  <li>Detected a 2-day gap in second-class shipments through statistical hypothesis testing.</li>
+  <li>Conducted ANOVA analysis across four departments to assess demand variance.</li>
+  <li>Visualized performance using Minitab and Power BI dashboards to support data-driven decisions.</li>
+
                 </ul>
               }
             />
