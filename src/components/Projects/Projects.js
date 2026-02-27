@@ -95,7 +95,7 @@ function Projects() {
               title="Toyota Supply Chain Resilience During COVID-19"
               description={
                 <ul>
-                  <li>Conducted analysis of Toyota’s supply chain network focusing on procurement strategies and logistics optimization.</li>
+                  <li>Conducted analysis of Toyota's supply chain network focusing on procurement strategies and logistics optimization.</li>
                   <li>Evaluated Lean Manufacturing, Just-In-Time (JIT), and Kaizen quality control practices.</li>
                   <li>Proposed multi-sourcing strategies reducing supply risk by an estimated 25%.</li>
                   <li>Recommended inventory buffering to stabilize supply continuity during disruptions.</li>
