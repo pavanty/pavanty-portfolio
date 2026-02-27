@@ -11,7 +11,6 @@ import pl300 from "../../Assets/certifications/PL300.png";
 import coursera from "../../Assets/certifications/coursera.jpg";
 import business from "../../Assets/certifications/business_analysis.jpg";
 
-
 function Certifications() {
   const certifications = [
     {
@@ -22,11 +21,11 @@ function Certifications() {
       image: pl300,
       skills: ["Power BI", "DAX", "Data Visualization", "Business Intelligence"],
     },
-     {
+    {
       title: "Business Analysis A to Z Masterclass",
       issuer: "Udemy",
       issued: "Feb 2025",
-      credentialId: " UC-d9fd3c2d-2e90-46e8-884e-ce5277a097ed",
+      credentialId: "UC-d9fd3c2d-2e90-46e8-884e-ce5277a097ed",
       image: business,
       skills: ["Requirement Gathering", "Wireframes", "BRD/FRD", "Use Cases"],
     },
@@ -65,7 +64,7 @@ function Certifications() {
     {
       title: "Capgemini Entry Level Developer 1 & 2",
       issuer: "Capgemini",
-      issued: "",
+      issued: "Nov 2023",
       credentialId: "",
       image: Capgemini,
       skills: ["Java", "Spring Boot", "React.js", "Git"],
@@ -73,12 +72,8 @@ function Certifications() {
   ];
 
   return (
-    <Container
-      fluid
-      className="project-section"
-      style={{ position: "relative" }}
-    >
-      {/* Background particles: fixed + non-interactive so it never blocks clicks */}
+    <Container fluid className="project-section" style={{ position: "relative" }}>
+      {/* Background particles */}
       <div
         style={{
           position: "fixed",
@@ -90,21 +85,33 @@ function Certifications() {
         <Particle />
       </div>
 
-      {/* Content above particles */}
+      {/* Content */}
       <div style={{ position: "relative", zIndex: 1 }}>
         <Container>
           <h1 className="project-heading mb-3">
             My <strong className="purple">Certifications</strong>
           </h1>
 
-          <p style={{ color: "white", marginBottom: "50px", fontSize: "1.15rem" }}>
-            Professional certifications validating expertise in analytics, product
-            management, and technology.
+          <p
+            style={{
+              color: "white",
+              marginBottom: "50px",
+              fontSize: "1.15rem",
+            }}
+          >
+            Professional certifications validating expertise in analytics,
+            product management, and technology.
           </p>
 
-          <Row className="g-4">
+          <Row className="g-4 justify-content-center">
             {certifications.map((cert, index) => (
-              <Col xs={12} md={6} lg={4} className="d-flex" key={index}>
+              <Col
+                key={index}
+                xs={12}
+                md={certifications.length === 1 ? 8 : 6}
+                lg={certifications.length === 1 ? 6 : 4}
+                className="d-flex justify-content-center"
+              >
                 <Card
                   className="w-100 shadow-lg"
                   style={{
@@ -186,7 +193,9 @@ function Certifications() {
                           {cert.credentialId}
                         </div>
                       ) : (
-                        <div style={{ visibility: "hidden" }}>Credential ID:</div>
+                        <div style={{ visibility: "hidden" }}>
+                          Credential ID:
+                        </div>
                       )}
                     </div>
 
