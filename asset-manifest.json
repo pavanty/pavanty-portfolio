@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/pavanty-portfolio/static/css/main.3c175316.css",
-    "main.js": "/pavanty-portfolio/static/js/main.58052758.js",
+    "main.js": "/pavanty-portfolio/static/js/main.5168d717.js",
     "static/js/453.1407b060.chunk.js": "/pavanty-portfolio/static/js/453.1407b060.chunk.js",
     "static/media/Supply chain.png": "/pavanty-portfolio/static/media/Supply chain.cf154a1bc0fc87ac95c7.png",
     "static/media/Toyota Presentation.png": "/pavanty-portfolio/static/media/Toyota Presentation.2b6170cd5142a83cc32c.png",
@@ -9,6 +9,7 @@
     "static/media/coursera.jpg": "/pavanty-portfolio/static/media/coursera.18f022a42d2179acc117.jpg",
     "static/media/cspo.jpg": "/pavanty-portfolio/static/media/cspo.fec64177841f3946e113.jpg",
     "static/media/Data Landscape of GenAI for Project Managers_page-0001.jpg": "/pavanty-portfolio/static/media/Data Landscape of GenAI for Project Managers_page-0001.0c38f1b39d6f8ab8b9c9.jpg",
+    "static/media/business_analysis.jpg": "/pavanty-portfolio/static/media/business_analysis.08c6898c1f8d116e611c.jpg",
     "static/media/Perq's with Zelle.jpg": "/pavanty-portfolio/static/media/Perq's with Zelle.3dbdbca88ab89ebb18c5.jpg",
     "static/media/Capgemini_Ocean Level-2.jpg": "/pavanty-portfolio/static/media/Capgemini_Ocean Level-2.9d012f4e35ebe2abd283.jpg",
     "static/media/home-main.svg": "/pavanty-portfolio/static/media/home-main.359935c39288e92d4dba5c9f2445b91d.svg",
@@ -23,7 +24,6 @@
     "static/media/Postman.svg": "/pavanty-portfolio/static/media/Postman.731600ddded53e009b672b2130661997.svg",
     "static/media/intellij-idea.svg": "/pavanty-portfolio/static/media/intellij-idea.a665ae5920b20b5c309de0aa306924d5.svg",
     "static/media/vscode.svg": "/pavanty-portfolio/static/media/vscode.01c32f3da6e0380beb0ed980549fa10d.svg",
-    "static/media/Google Chrome.svg": "/pavanty-portfolio/static/media/Google Chrome.d37257e4fd1f57a382e297a74a566225.svg",
     "static/media/Python.svg": "/pavanty-portfolio/static/media/Python.4c10e3e883c66039a07b3d1da3551107.svg",
     "static/media/React.svg": "/pavanty-portfolio/static/media/React.dab5e742691999bfe3df57d8d690607b.svg",
     "index.html": "/pavanty-portfolio/index.html",
@@ -34,11 +34,11 @@
     "static/media/Git.svg": "/pavanty-portfolio/static/media/Git.9da88573cca3c97a3a1523ae09d93654.svg",
     "static/media/Minitab.svg": "/pavanty-portfolio/static/media/Minitab.310b952bfdc9d15ad450df35eedbdeb0.svg",
     "main.3c175316.css.map": "/pavanty-portfolio/static/css/main.3c175316.css.map",
-    "main.58052758.js.map": "/pavanty-portfolio/static/js/main.58052758.js.map",
+    "main.5168d717.js.map": "/pavanty-portfolio/static/js/main.5168d717.js.map",
     "453.1407b060.chunk.js.map": "/pavanty-portfolio/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3c175316.css",
-    "static/js/main.58052758.js"
+    "static/js/main.5168d717.js"
   ]
 }
