@@ -8,6 +8,7 @@ import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer";
 import Certifications from "./components/Certifications/Certifications";
 
+
 import {
   BrowserRouter as Router,
   Route,

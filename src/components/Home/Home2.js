@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/avatar.svg";
+// import myImg from "../../Assets/avatar.svg";
+import myImg from "../../Assets/example-1.png";
 import Tilt from "react-parallax-tilt";
 
 function Home2() {
@@ -29,11 +30,11 @@ function Home2() {
 </p>
           </Col>
 
-          <Col md={4} className="myAvtar">
-            <Tilt>
-              <img src={myImg} className="img-fluid" alt="avatar" />
-            </Tilt>
-          </Col>
+        <Col md={4} className="myAvtar" style={{ alignSelf: "flex-start", marginTop: "-100px" }}>
+  <Tilt>
+    <img src={myImg} className="img-fluid" alt="avatar" />
+  </Tilt>
+</Col>
         </Row>
       </Container>
     </Container>
