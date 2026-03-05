@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/pavanty-portfolio/static/css/main.3c175316.css",
-    "main.js": "/pavanty-portfolio/static/js/main.9f95533b.js",
+    "main.css": "/pavanty-portfolio/static/css/main.cb19f3a7.css",
+    "main.js": "/pavanty-portfolio/static/js/main.5933b2a3.js",
     "static/js/453.1407b060.chunk.js": "/pavanty-portfolio/static/js/453.1407b060.chunk.js",
     "static/media/Supply chain.png": "/pavanty-portfolio/static/media/Supply chain.cf154a1bc0fc87ac95c7.png",
     "static/media/Toyota Presentation.png": "/pavanty-portfolio/static/media/Toyota Presentation.2b6170cd5142a83cc32c.png",
@@ -10,6 +10,7 @@
     "static/media/example.png": "/pavanty-portfolio/static/media/example.0e70f293b602bce491ba.png",
     "static/media/cspo.jpg": "/pavanty-portfolio/static/media/cspo.fec64177841f3946e113.jpg",
     "static/media/Data Landscape of GenAI for Project Managers_page-0001.jpg": "/pavanty-portfolio/static/media/Data Landscape of GenAI for Project Managers_page-0001.0c38f1b39d6f8ab8b9c9.jpg",
+    "static/media/example-1.png": "/pavanty-portfolio/static/media/example-1.3294b82c56cf1e76a22c.png",
     "static/media/business_analysis.jpg": "/pavanty-portfolio/static/media/business_analysis.08c6898c1f8d116e611c.jpg",
     "static/media/Perq's with Zelle.jpg": "/pavanty-portfolio/static/media/Perq's with Zelle.3dbdbca88ab89ebb18c5.jpg",
     "static/media/Capgemini_Ocean Level-2.jpg": "/pavanty-portfolio/static/media/Capgemini_Ocean Level-2.9d012f4e35ebe2abd283.jpg",
@@ -19,7 +20,6 @@
     "static/media/PL300.png": "/pavanty-portfolio/static/media/PL300.768b9a50683bbb8440a2.png",
     "static/media/DoseGuide - Medication Tracking & Pharmacy Integration Platform .pdf.webp": "/pavanty-portfolio/static/media/DoseGuide - Medication Tracking & Pharmacy Integration Platform .pdf.00b0982d8053fc4f0b55.webp",
     "static/media/sap_882701.png": "/pavanty-portfolio/static/media/sap_882701.a63efdc07e55d5b621bb.png",
-    "static/media/avatar.svg": "/pavanty-portfolio/static/media/avatar.7f806e40d46fc76fbc3c4a3d71349951.svg",
     "static/media/excel_791635.png": "/pavanty-portfolio/static/media/excel_791635.b889191908f43d97aaa5.png",
     "static/media/SQL.svg": "/pavanty-portfolio/static/media/SQL.52fc098126b8b29ddd950a944b5d0026.svg",
     "static/media/Postman.svg": "/pavanty-portfolio/static/media/Postman.731600ddded53e009b672b2130661997.svg",
@@ -34,12 +34,12 @@
     "static/media/powerbi.svg": "/pavanty-portfolio/static/media/powerbi.77d15c152be6b62b0d11df437eeefff1.svg",
     "static/media/Git.svg": "/pavanty-portfolio/static/media/Git.9da88573cca3c97a3a1523ae09d93654.svg",
     "static/media/Minitab.svg": "/pavanty-portfolio/static/media/Minitab.310b952bfdc9d15ad450df35eedbdeb0.svg",
-    "main.3c175316.css.map": "/pavanty-portfolio/static/css/main.3c175316.css.map",
-    "main.9f95533b.js.map": "/pavanty-portfolio/static/js/main.9f95533b.js.map",
+    "main.cb19f3a7.css.map": "/pavanty-portfolio/static/css/main.cb19f3a7.css.map",
+    "main.5933b2a3.js.map": "/pavanty-portfolio/static/js/main.5933b2a3.js.map",
     "453.1407b060.chunk.js.map": "/pavanty-portfolio/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3c175316.css",
-    "static/js/main.9f95533b.js"
+    "static/css/main.cb19f3a7.css",
+    "static/js/main.5933b2a3.js"
   ]
 }
