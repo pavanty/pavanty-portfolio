@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/pavanty-portfolio/static/css/main.c9d30020.css",
-    "main.js": "/pavanty-portfolio/static/js/main.5933b2a3.js",
+    "main.js": "/pavanty-portfolio/static/js/main.01d7f597.js",
     "static/js/453.1407b060.chunk.js": "/pavanty-portfolio/static/js/453.1407b060.chunk.js",
     "static/media/Supply chain.png": "/pavanty-portfolio/static/media/Supply chain.cf154a1bc0fc87ac95c7.png",
     "static/media/Toyota Presentation.png": "/pavanty-portfolio/static/media/Toyota Presentation.2b6170cd5142a83cc32c.png",
@@ -12,6 +12,7 @@
     "static/media/Data Landscape of GenAI for Project Managers_page-0001.jpg": "/pavanty-portfolio/static/media/Data Landscape of GenAI for Project Managers_page-0001.0c38f1b39d6f8ab8b9c9.jpg",
     "static/media/example-1.png": "/pavanty-portfolio/static/media/example-1.3294b82c56cf1e76a22c.png",
     "static/media/business_analysis.jpg": "/pavanty-portfolio/static/media/business_analysis.08c6898c1f8d116e611c.jpg",
+    "static/media/GLI.jpeg": "/pavanty-portfolio/static/media/GLI.525bab01be2d8ffac497.jpeg",
     "static/media/Perq's with Zelle.jpg": "/pavanty-portfolio/static/media/Perq's with Zelle.3dbdbca88ab89ebb18c5.jpg",
     "static/media/Capgemini_Ocean Level-2.jpg": "/pavanty-portfolio/static/media/Capgemini_Ocean Level-2.9d012f4e35ebe2abd283.jpg",
     "static/media/home-main.svg": "/pavanty-portfolio/static/media/home-main.359935c39288e92d4dba5c9f2445b91d.svg",
@@ -35,11 +36,11 @@
     "static/media/Git.svg": "/pavanty-portfolio/static/media/Git.9da88573cca3c97a3a1523ae09d93654.svg",
     "static/media/Minitab.svg": "/pavanty-portfolio/static/media/Minitab.310b952bfdc9d15ad450df35eedbdeb0.svg",
     "main.c9d30020.css.map": "/pavanty-portfolio/static/css/main.c9d30020.css.map",
-    "main.5933b2a3.js.map": "/pavanty-portfolio/static/js/main.5933b2a3.js.map",
+    "main.01d7f597.js.map": "/pavanty-portfolio/static/js/main.01d7f597.js.map",
     "453.1407b060.chunk.js.map": "/pavanty-portfolio/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c9d30020.css",
-    "static/js/main.5933b2a3.js"
+    "static/js/main.01d7f597.js"
   ]
 }
