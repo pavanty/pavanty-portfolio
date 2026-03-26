@@ -10,6 +10,7 @@ import sql from "../../Assets/certifications/sql.jpg";
 import pl300 from "../../Assets/certifications/PL300.png";
 import coursera from "../../Assets/certifications/coursera.jpg";
 import business from "../../Assets/certifications/business_analysis.jpg";
+import gli from "../../Assets/certifications/GLI.jpeg";
 
 function Certifications() {
   const certifications = [
@@ -20,6 +21,14 @@ function Certifications() {
       credentialId: "8A87839ADB909FE4",
       image: pl300,
       skills: ["Power BI", "DAX", "Data Visualization", "Business Intelligence"],
+    },
+     {
+      title: "Graduate Leadership Institute Certificate",
+      issuer: "Northeastern University",
+      issued: "Mar 2026",
+      credentialId: "",
+      image: gli,
+      skills: ["Realtionship Building","Communication", "Personal Integrity", "Self-awareness", "Social Justice"],
     },
     {
       title: "Business Analysis A to Z Masterclass",
