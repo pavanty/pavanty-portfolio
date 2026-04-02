@@ -29,7 +29,7 @@ function AboutCard() {
         <p style={{ textAlign: "left" }}>
           Prior to that, I worked at{" "}
           <span className="purple">
-            Capgemini as a Project Engineer (Software Engineer)
+            Capgemini as a Project Engineer (Systems Analyst)
           </span>, gaining hands-on experience in software development and enterprise-level systems.
         </p>
 
