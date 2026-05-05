@@ -1,10 +1,11 @@
 {
   "files": {
     "main.css": "/pavanty-portfolio/static/css/main.c9d30020.css",
-    "main.js": "/pavanty-portfolio/static/js/main.408b7abe.js",
+    "main.js": "/pavanty-portfolio/static/js/main.01d6ff24.js",
     "static/js/453.1407b060.chunk.js": "/pavanty-portfolio/static/js/453.1407b060.chunk.js",
     "static/media/Supply chain.png": "/pavanty-portfolio/static/media/Supply chain.cf154a1bc0fc87ac95c7.png",
     "static/media/Toyota Presentation.png": "/pavanty-portfolio/static/media/Toyota Presentation.2b6170cd5142a83cc32c.png",
+    "static/media/Lean six Sigma.jpg": "/pavanty-portfolio/static/media/Lean six Sigma.3a871dc39cee40ff03aa.jpg",
     "static/media/sql.jpg": "/pavanty-portfolio/static/media/sql.e02bf648c947b15758f4.jpg",
     "static/media/coursera.jpg": "/pavanty-portfolio/static/media/coursera.18f022a42d2179acc117.jpg",
     "static/media/example.png": "/pavanty-portfolio/static/media/example.0e70f293b602bce491ba.png",
@@ -36,11 +37,11 @@
     "static/media/Git.svg": "/pavanty-portfolio/static/media/Git.9da88573cca3c97a3a1523ae09d93654.svg",
     "static/media/Minitab.svg": "/pavanty-portfolio/static/media/Minitab.310b952bfdc9d15ad450df35eedbdeb0.svg",
     "main.c9d30020.css.map": "/pavanty-portfolio/static/css/main.c9d30020.css.map",
-    "main.408b7abe.js.map": "/pavanty-portfolio/static/js/main.408b7abe.js.map",
+    "main.01d6ff24.js.map": "/pavanty-portfolio/static/js/main.01d6ff24.js.map",
     "453.1407b060.chunk.js.map": "/pavanty-portfolio/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c9d30020.css",
-    "static/js/main.408b7abe.js"
+    "static/js/main.01d6ff24.js"
   ]
 }
