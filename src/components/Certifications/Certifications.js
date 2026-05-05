@@ -11,6 +11,7 @@ import pl300 from "../../Assets/certifications/PL300.png";
 import coursera from "../../Assets/certifications/coursera.jpg";
 import business from "../../Assets/certifications/business_analysis.jpg";
 import gli from "../../Assets/certifications/GLI.jpeg";
+import lean from "../../Assets/certifications/Lean six Sigma.jpg";
 
 function Certifications() {
   const certifications = [
@@ -29,6 +30,14 @@ function Certifications() {
       credentialId: "",
       image: gli,
       skills: ["Realtionship Building","Communication", "Personal Integrity", "Self-awareness", "Social Justice"],
+    },
+     {
+      title: "Lean Six Sigma Certificate",
+      issuer: "Lai Lean Academy - Northeastern University",
+      issued: "Apr 2026",
+      credentialId: "",
+      image: lean,
+      skills: ["VSM", "Six Sigma", "Kanban", "DMAIC"],
     },
     {
       title: "Business Analysis A to Z Masterclass",
