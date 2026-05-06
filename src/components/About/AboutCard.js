@@ -20,7 +20,7 @@ function AboutCard() {
         <p style={{  }}>
           Professionally, I worked as a{" "}
           <span className="purple">
-            Business Intelligence Analyst Intern in the Supply Chain Department at Liebherr
+            project engineer intern in the Supply Chain Department at Liebherr
           </span>, where I focused on data analytics, reporting, and generating operational insights to support decision-making.
         </p>
 
@@ -29,7 +29,7 @@ function AboutCard() {
         <p style={{ textAlign: "left" }}>
           Prior to that, I worked at{" "}
           <span className="purple">
-            Capgemini as a Project Engineer (Systems Analyst)
+            Capgemini as a Project Engineer
           </span>, gaining hands-on experience in software development and enterprise-level systems.
         </p>
 
