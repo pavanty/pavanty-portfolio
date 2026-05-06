@@ -14,7 +14,7 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
  <p className="home-about-body">
-  I’m a Business Intelligence Analyst with experience turning complex business
+  I’m a Supply chain Analyst with experience turning complex business
   problems into clear insights and measurable outcomes.
 
   <br /><br />
