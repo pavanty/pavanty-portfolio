@@ -14,7 +14,7 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
  <p className="home-about-body">
-  I’m a Supply chain Analyst with experience turning complex business
+  I’m a Project Engineer with experience turning complex business
   problems into clear insights and measurable outcomes.
 
   <br /><br />
@@ -26,7 +26,7 @@ function Home2() {
   <br /><br />
 
   I’m interested in{" "}
-  <b className="purple">Business Analysis, Product Analytics, and Supply Chain Optimization</b>.
+  <b className="purple">Supply Chain, Business & Analytics, Project or Program related roles</b>.
 </p>
           </Col>
 
